@@ -4,7 +4,7 @@ import { User } from "../entities/User";
 import { Message } from "../entities/Message";
 
 interface IMessageCreate {
-  admin_id: string;
+  admin_id?: string;
   user_id: string;
   text: string;
 }
