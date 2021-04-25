@@ -35,6 +35,14 @@ class UsersService {
 
     return user;
   }
+
+  async findByUserID(id: string) {
+    const user = await this.usersRepository.findOne({
+      id,
+    });
+
+    return user;
+  }
 }
 
 export { UsersService };
